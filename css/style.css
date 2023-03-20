@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-Regular.woff);
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../fonts/OpenSans-Bold.woff);
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, sans-serif;
+}
+
+.welcome {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #ffffff;
+	background-size: cover;
+
+	position: relative;
+	z-index: 0;
+	
+	box-sizing: border-box;
+/*	max-weight: 736px;*/
+/*	height: 920px;*/
+	padding-bottom: 400px;
+	padding-top: 100px;
+}
+
+.welcome:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	opacity: 0.6;
+	z-index: -1;
+}
+
+.navigation {
+	max-width: 1200px;
+	box-sizing: border-box; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.logo {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
+.name {
+	display: block;
+	margin-left: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 44px;
+	line-height: 1.7;
+	color: #fff;
+}
+
+.discription {
+	margin: 130px 0 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.discription-text {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.5;
+	color: #fff;
+	text-align: center;
+}
+
+@media (min-width: 641px) and (max-width: 1099px) {
+	.welcome {
+		padding-top: 50px;
+		padding-bottom: 400px;
+	}
+
+	.navigation {
+
+	}
+
+	.logo {
+		width: 225px;
+	}
+
+	.name {
+		font-size: 28px;
+		line-height: 1.3;
+		margin-left: 100px;
+	}
+
+	.discription-text {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 640px) {
+	.welcome {
+		padding-top: 30px;
+		padding-bottom: 400px;
+	}
+
+	.navigation {
+		display: block;
+	}
+
+	.logo {
+		width: 100px;
+		margin: 0 auto;
+	}
+
+	.name {
+		font-size: 16px;
+		line-height: 1.3;
+		margin-left: 0;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.discription-text {
+		font-size: 16px;
+	}
+}
