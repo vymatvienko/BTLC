@@ -29,8 +29,8 @@ body {
 	position: relative;
 	z-index: 0;
 	box-sizing: border-box;
-	padding-bottom: 400px;
-	padding-top: 100px;
+	padding-bottom: 500px;
+	padding-top: 30px;
 }
 
 .welcome:after {
@@ -49,31 +49,47 @@ body {
 	max-width: 1200px;
 	box-sizing: border-box; 
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 30px;
 }
 
+.name-baikal {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 44px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
 .logo {
 	display: block;
 	margin: 0;
 	padding: 0;
-	width: 300px;
+	width: 275px;
 }
 
-.name {
+.name-desktop {
 	display: block;
-	margin-left: 30px;
+	padding: 0 150px;
+	margin-top: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 44px;
-	line-height: 1.7;
+	line-height: 1.3;
 	color: #fff;
+	text-align: center;
+}
+
+.name-mobile {
+	display: none;
 }
 
 .discription {
-	margin: 130px 0 0 0;
+	margin: 30px 0 0 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -90,30 +106,41 @@ body {
 @media (min-width: 641px) and (max-width: 1099px) {
 	.welcome {
 		background-image: url(../images/background-mobile.jpg);
-		padding-top: 50px;
-		padding-bottom: 400px;
+		padding-top: 70px;
+		padding-bottom: 500px;
 	}
 
 	.navigation {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		padding: 0 80px;
 	}
 
-	.logo {
-		width: 225px;
-		margin-top: 150px;
+	.name-baikal {
+		display: none;
 	}
 
-	.name {
+	.logo {
+		width: 200px;
+	}
+
+	.name-desktop {
+		display: none;
+	}
+
+	.name-mobile {
+		display: block;
 		font-size: 28px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
 		line-height: 1.3;
-		margin: 35px auto 0;
+		margin: 70px auto 0;
 		text-align: center;
 	}
 
 	.discription {
-		margin-top: 70px;
+		margin-top: 100px;
 	}
 
 	.discription-text {
@@ -124,31 +151,41 @@ body {
 @media (max-width: 640px) {
 	.welcome {
 		background-image: url(../images/background-mobile.jpg);
-		padding-top: 30px;
-		padding-bottom: 400px;
+		padding-top: 70px;
+		padding-bottom: 500px;
 	}
 
 	.navigation {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		padding: 0 20px;
 	}
 
-	.logo {
-		width: 100px;
-		margin-top: 150px;
+	.name-baikal {
+		display: none;
 	}
 
-	.name {
+	.logo {
+		width: 125px;
+	}
+
+	.name-desktop {
+		display: none;
+	}
+
+	.name-mobile {
+		display: block;
 		font-size: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #fff;
 		line-height: 1.3;
-		margin-left: 0;
+		margin: 125px auto 0;
 		text-align: center;
-		margin-top: 50px;
 	}
 
 	.discription {
-		margin-top: 70px;
+		margin-top: 125px;
 	}
 
 	.discription-text {
