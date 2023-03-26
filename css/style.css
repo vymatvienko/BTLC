@@ -21,7 +21,7 @@ body {
 }
 
 .welcome {
-	background-image: url(../images/background.jpg);
+	background-image: url(../images/background-desktop.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #ffffff;
@@ -89,6 +89,7 @@ body {
 
 @media (min-width: 641px) and (max-width: 1099px) {
 	.welcome {
+		background-image: url(../images/background-mobile.jpg);
 		padding-top: 50px;
 		padding-bottom: 400px;
 	}
@@ -101,7 +102,7 @@ body {
 
 	.logo {
 		width: 225px;
-		margin-top: 100px;
+		margin-top: 150px;
 	}
 
 	.name {
@@ -122,6 +123,7 @@ body {
 
 @media (max-width: 640px) {
 	.welcome {
+		background-image: url(../images/background-mobile.jpg);
 		padding-top: 30px;
 		padding-bottom: 400px;
 	}
